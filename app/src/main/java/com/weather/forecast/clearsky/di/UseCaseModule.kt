@@ -1,7 +1,7 @@
 package com.zimmy.sample.weather_compose.di
 
 import com.weather.forecast.clearsky.repository.WeatherRepository
-import com.weather.forecast.clearsky.usecase.WeatherUseCase
+import com.weather.forecast.clearsky.RepoImpl.WeatherUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

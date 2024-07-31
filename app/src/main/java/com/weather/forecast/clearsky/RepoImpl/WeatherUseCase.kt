@@ -1,4 +1,4 @@
-package com.weather.forecast.clearsky.usecase
+package com.weather.forecast.clearsky.RepoImpl
 
 import com.weather.forecast.clearsky.model.WeatherModel
 import com.weather.forecast.clearsky.repository.WeatherRepository

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainscreen.ui.MainActivity">
+
+
+    <EditText
+        android:id="@+id/enterCountryET"
+        android:layout_width="259dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Enter location"
+        android:inputType="text"
+
+
+        android:paddingStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/getWeatheBTr"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="4dp"
+
+        android:backgroundTint="@color/teal_200"
+        android:padding="16sp"
+        android:paddingEnd="16dp"
+        android:text="search"
+
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="4sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/enterCountryET"
+        app:layout_constraintTop_toTopOf="@+id/enterCountryET" />
+
+    <TextView
+        android:id="@+id/locationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:hint="Location"
+        android:paddingStart="16dp"
+
+        android:paddingEnd="16dp"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getWeatheBTr" />
+
+    <TextView
+        android:id="@+id/tempTV"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:hint="Temperature"
+
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationTV" />
+
+    <TextView
+        android:id="@+id/conditonTv"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:hint="Condition"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+
+
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempTV" />
+
+    <ImageView
+        android:id="@+id/conditonImage"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conditonTv"
+        app:layout_constraintVertical_bias="0.233" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

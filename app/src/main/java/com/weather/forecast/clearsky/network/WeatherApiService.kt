@@ -1,5 +1,6 @@
 package com.weather.forecast.clearsky.network
 
+import android.widget.ImageView
 import com.weather.forecast.clearsky.model.WeatherModel
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -9,4 +10,8 @@ interface WeatherApiService {
     suspend fun getWeatherData(
         @Query("q") city: String
     ): WeatherModel?
+
+
+
+
 }
